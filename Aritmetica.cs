@@ -1,7 +1,7 @@
     /// <summary>
     /// Implementa operações aritméticas.
     /// </summary>
-    internal class Aritmetica
+    internal static class Aritmetica
     {
         /// <summary>
         /// Tipo de conversão de temperatura a executar.
@@ -15,19 +15,19 @@
         /// <summary>
         /// Operação de soma.
         /// </summary>Retorma a soma de dois números.
-        public int Somar(int x, int y)
+        public static int Somar(int x, int y)
         {
             return x + y;
         }
         /// <summary>
         /// Operação de subtração.
         /// </summary>Retorna a subtração de dois números.
-        public int Subtrair(int x, int y)
+        public static int Subtrair(int x, int y)
         {
             return x - y;
         }
 
-        public double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
+        public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
         {
             if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
             {
